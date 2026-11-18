@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theo Dinh Portfolio</title>
+<meta name="description" content="Thanh (Theo) Dinh: IT student at York University building frontends, data tools and AI-powered apps in Toronto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top" aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top">theodore<span>.</span>dinh</a>
+    <ul>
+      <li><a href="#work">work</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow mono rise"><span class="dot" aria-hidden="true"></span> Open to Summer 2027 internships · Toronto, ON</div>
+    <h1 class="name">
+      <span class="row rise d1">Theodore</span>
+      <span class="row rise d2"><span class="alt">Dinh</span><span class="viet">aka Thanh</span></span>
+    </h1>
+    <div class="hero-grid">
+      <div class="rise d3">
+        <p class="lede">IT student at York University who builds <strong>frontends people actually use</strong>, data tools that save hours, and apps that put AI behind a simple interface.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">See my work ↓</a>
+          <a class="btn" href="https://github.com/thanhzkda" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/thanh-dinh-309167317" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="status rise d3" aria-label="Current status">
+        <header><span>~/theo $ status</span><span>Nov 2026</span></header>
+        <dl>
+          <dt>studying</dt><dd>Hons. B.A. Information Technology, York U <b>(2028)</b></dd>
+          <dt>program</dt><dd>LA&amp;PS Co-op</dd>
+          <dt>shipping</dt><dd>Next.js · TypeScript · Python</dd>
+          <dt>looking for</dt><dd>Software Development, IT internships</dd>
+          <dt>next</dt><dd>Power BI, SQL, more React <span class="cursor" aria-hidden="true"></span></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="mono">01 / About</span><h2>I learned tech by fixing things for real people.</h2></div>
+    <div class="about-body">
+      <span></span>
+      <div class="prose">
+        <p>One of the proudest work I've done is the online ordering site for a Vietnamese restaurant in Toronto, where every bug I left in place meant a confused customer and a lost order. Since 2023 I have kept that site running, refactored it, and redesigned the flows customers use most.</p>
+      </div>
+    </div>
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><div class="n">30+</div><div class="l">production updates shipped to a live ordering site</div></div>
+      <div class="fact" role="listitem"><div class="n">~25%</div><div class="l">fewer steps for customers to complete common orders</div></div>
+      <div class="fact" role="listitem"><div class="n">48h</div><div class="l">from idea to working MVP for TwinTrim</div></div>
+      <div class="fact" role="listitem"><div class="n">1,000+</div><div class="l">AI responses evaluated at a 95%+ acceptance rate</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><span class="mono">02 / Selected work</span><h2>Things I have built and shipped.</h2></div>
+    <div class="work">
+
+      <article class="card feature">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="meta mono"><span>Hackathon · Team of 4</span><span class="pill">Frontend lead</span></div>
+          <h3>TwinTrim: edit video by talking to it</h3>
+          <p>An AI-powered video editor where you type what you want ("cut the first 5 seconds, add a voiceover") and see the result instantly.</p>
+          <ul>
+            <li>Architected the full interface with real-time video preview</li>
+            <li>Wired OpenRouter and ElevenLabs APIs into conversational editing commands</li>
+            <li>Shipped trimming, splicing, text and audio overlays in 48 hours</li>
+            <li>Built reusable components that cut later feature work by about 30%</li>
+          </ul>
+          <div class="tags"><span class="tag">Next.js 16</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Python</span><span class="tag">OpenRouter</span><span class="tag">ElevenLabs</span></div>
+        </div>
+        <div class="preview" aria-hidden="true">
+          <div class="screen"></div>
+          <div class="timeline"><i></i><i></i><i></i><i></i></div>
+          <div class="prompt">› <b>trim the intro and add a voiceover saying "welcome back"</b></div>
+          <div style="color:var(--muted)">✓ 2 edits applied · preview ready</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="meta mono"><span>Full-stack · Solo</span><span class="pill wip">In Progress</span></div>
+        <h3>Tally</h3>
+        <p>A personal finance web app and my first fully deployed project, built end to end from scaffold to production.</p>
+        <ul>
+          <li>Cookie-based authentication with Supabase server clients and middleware</li>
+          <li>Took it from <code>create-next-app</code> scaffold to a live deployment</li>
+        </ul>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span></div>
+      </article>
+
+      <article class="card">
+        <div class="meta mono"><span>Data · Python</span><span class="pill">Analysis</span></div>
+        <h3>Weather Change Analyzer</h3>
+        <p>A tool that compares weeks of weather data across regions and flags anomalies and temperature trends.</p>
+        <ul>
+          <li>Automated cleaning and preprocessing, cutting manual work by about 80%</li>
+          <li>Statistical comparisons and charts of regional patterns</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Data viz</span></div>
+      </article>
+
+      <article class="card">
+        <div class="meta mono"><span>Production · Since 2023</span><span class="pill">Live</span></div>
+        <h3>Restaurant ordering platform</h3>
+        <p>The online ordering site for PCB, a Toronto Vietnamese restaurant. I maintain it, fix it, and make ordering faster.</p>
+        <ul>
+          <li>Refactored 1,500+ lines and removed duplicate components</li>
+          <li>Responsive rebuild that passes mobile accessibility testing</li>
+          <li>Product requirements written, Phase 1 setup planned</li>
+          <li>Planned stack: Next.js, Tailwind and GSAP for motion</li>
+        </ul>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span><span class="tag">GSAP</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><span class="mono">03 / Experience</span><h2>Changelog.</h2></div>
+    <div class="log">
+      <div class="entry">
+        <div class="when mono"><b>Sep 2023 to now</b>PCB · Toronto</div>
+        <div>
+          <h3>Website Administrator</h3>
+          <ul>
+            <li>Delivered 30+ updates for menu management, promotions and customer-facing features using React and Git</li>
+            <li>Redesigned ordering workflows and navigation, cutting interactions for common tasks by about 25%</li>
+            <li>Diagnosed and fixed 20+ frontend bugs and UI issues</li>
+            <li>Made the site responsive across mobile, tablet and desktop</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when mono"><b>Jan 2024 to Jan 2025</b>Outlier · Remote</div>
+        <div>
+          <h3>AI Trainer</h3>
+          <ul>
+            <li>Evaluated 1,000+ AI responses across coding, reasoning, math and writing</li>
+            <li>Kept a 95%+ quality acceptance rate across 10+ content domains</li>
+            <li>Wrote feedback and annotations that improved model accuracy and alignment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when mono"><b>2024 to 2028</b>York University · Keele</div>
+        <div>
+          <h3>Hons. B.A. Information Technology </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="mono">04 / Toolkit</span><h2>What I work with.</h2></div>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Java</li><li>HTML/CSS</li><li>Swift</li><li>MATLAB</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks &amp; libraries</h3>
+        <ul><li>Next.js</li><li>React</li><li>Tailwind CSS</li><li>FastAPI</li><li>NumPy</li><li>Pandas</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; platforms</h3>
+        <ul><li>Git/GitHub</li><li>Supabase</li><li>REST APIs</li><li>Core Data</li><li>Video processing</li><li>LLM APIs</li></ul>
+      </div>
+    </div>
+    <p class="learning mono">Currently learning: <b>SQL</b> · <b>Power BI</b> · <b>AI automation workflows</b></p>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <div class="sec-head"><span class="mono">05 / Beyond code</span><h2>Community and the rest of life.</h2></div>
+    <div class="beyond">
+      <div class="card">
+        <div class="meta mono"><span>May 2025</span></div>
+        <h3>Hack The Six</h3>
+        <p>Volunteered on site for 500+ hackers at one of Toronto's largest hackathons, helping with logistics, tech questions and keeping things running across venues.</p>
+      </div>
+      <div class="card">
+        <div class="meta mono"><span>Ongoing</span></div>
+        <h3>Building toward a business</h3>
+        <p>I want to start my own company. Every project here is practice for that: shipping fast, listening to users, and owning the result.</p>
+      </div>
+      <div class="card">
+        <div class="meta mono"><span>Winters</span></div>
+        <h3>Snowboarding</h3>
+        <p>When I am not in front of a screen, I am usually on a hill. Falling, getting up, and trying the line again is a decent model for debugging too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="mono" style="color:var(--muted)">06 / Contact</span>
+    <h2>Let's build something <span>useful.</span></h2>
+    <p style="max-width:52ch;color:var(--muted);margin-top:18px">I am looking for Summer 2027 internships in software development and IT. The fastest way to reach me is email.</p>
+    <div class="contact-row">
+      <span class="email" id="email">thanhdinh140705@gmail.com</span>
+      <button class="btn primary" id="copy" type="button">Copy email</button>
+      <a class="btn" href="https://www.linkedin.com/in/thanh-dinh-309167317" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/thanhzkda" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span>© 2026 Thanh (Theo) Dinh</span>
+    <span>Built in Toronto · <a href="#top">back to top ↑</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
